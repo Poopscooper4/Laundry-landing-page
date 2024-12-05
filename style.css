@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topsec {
+    width: 100%;
+    padding: 30px 105px 246px 105px;
+    background-color: #3a3a3a;
+}
+
+.topar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconlinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-clock {
+    display: flex;
+    gap: 30px;
+}
+
+.clock,
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-solid,
+.fa-brands {
+    cursor: pointer;
+    font-size: 20px;
+    color: #3db2ff;
+}
+
+.showtime {
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-bar {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.navmenu {
+    color: var(--Text-Color, #6e6e6e);
+    font-family: "Inter", sans-serif;
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.listbar {
+    display: flex;
+}
+
+.list {
+    cursor: pointer;
+    padding: 35px 15px;
+}
+
+.list:hover {
+    background-color: #3db2ff;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnprimary button {
+    padding: 20px 18px;
+    color: var(--White, #fff);
+    text-align: center;
+    background-color: #3db2ff;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+.positionsec{
+    position: relative;
+}
+.formposition {
+    position: absolute;
+    bottom: 100px;
+    right: 105px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #3db2ff;
+}
+
+.inpflex {
+    display: flex;
+    gap: 30px;
+}
+
+.inputstyle input {
+    border: none;
+    border-bottom: solid 3px white;
+    background-color: #81cdff;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 20px;
+
+}
+::placeholder{
+    color: var(--White, #FFF);
+
+}
+
+.formposition button {
+    cursor: pointer;
+    width: 180px;
+    padding: 20px 18px;
+    border: none;
+    color: var(--Primary, #3DB2FF);
+    font-family: "Inter", sans-serif;
+
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.hero {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero h1 {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 80px;
+}
+
+.hero p {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.feautres {
+    gap: 30px;
+    display: flex;
+    padding: 35px 105px 50px 105px;
+    align-items: flex-start;
+}
+
+.fetbox {
+    width: 285px;
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    margin: 35px;
+    padding-right: 84px;
+}
+
+.feautresstyle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feautresstyle h4 {
+    color: var(--Heading-Color, #2D2D2D);
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 35px;
+}
+
+.feautresstyle p {
+    color: var(--Text-Color, #6E6E6E);
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.spalce{
+    width: 300px;
+    background-color: red;
+}
