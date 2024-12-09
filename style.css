@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     width: 100%;
 }
-
+/* -------header--------- */
 .topsec {
     width: 100%;
     padding: 30px 105px 246px 105px;
@@ -71,7 +71,6 @@ body {
 .navmenu {
     color: var(--Text-Color, #6e6e6e);
     font-family: "Inter", sans-serif;
-
     font-size: 17px;
     font-style: normal;
     font-weight: 600;
@@ -188,19 +187,21 @@ body {
 }
 
 .feautres {
+    width: 50%;
     gap: 30px;
     display: flex;
-    padding: 35px 105px 50px 105px;
+    padding: 35px 0px 50px 105px;
     align-items: flex-start;
 }
 
 .fetbox {
-    width: 285px;
+    /* width: 285px; */
     flex-direction: column;
     gap: 30px;
     display: flex;
     margin: 35px;
-    padding-right: 84px;
+    /* padding: 35px; */
+    /* padding-left: 84px; */
 }
 
 .feautresstyle {
@@ -242,3 +243,54 @@ body {
     line-height: 30px;
     padding: 27px 95px 20px 20px;
 }
+.media1300{
+    display: flex;
+}
+
+@media screen and (max-width: 1300px){
+
+    .feautres{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .formposition{
+        /* align-items: center; */
+        /* width: 718px; */
+        /* gap: 50px; */
+        /* justify-content: center; */
+        bottom: 25%;
+        left: 10%;
+        right: 10%;
+    }
+    .inpflex{
+        display: flex;
+        justify-content: space-evenly;
+        /* gap:30px; */
+    }
+    .inputstyle input{
+        padding: 20px 60px;
+    }
+    .selectstyle{
+        padding: 27px 135px 20px 60px;
+    }
+    .media1300{
+        margin-top: 139px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 1040){
+
+}
+
+
+/* ---------------header done ----------- */
+
+
+
