@@ -49,6 +49,7 @@ body {
 }
 
 .showtime {
+    text-decoration: none;
     cursor: pointer;
     font-family: "Inter", sans-serif;
     color: white;
@@ -105,7 +106,7 @@ body {
     font-weight: 600;
     line-height: 25px;
 }
-.positionsec{
+.positionsec {
     position: relative;
 }
 .formposition {
@@ -125,6 +126,7 @@ body {
 }
 
 .inputstyle input {
+    color: white;
     border: none;
     border-bottom: solid 3px white;
     background-color: #81cdff;
@@ -134,11 +136,9 @@ body {
     font-weight: 400;
     line-height: 30px;
     padding: 20px;
-
 }
-::placeholder{
-    color: var(--White, #FFF);
-
+::placeholder {
+    color: var(--White, #fff);
 }
 
 .formposition button {
@@ -146,7 +146,7 @@ body {
     width: 180px;
     padding: 20px 18px;
     border: none;
-    color: var(--Primary, #3DB2FF);
+    color: var(--Primary, #3db2ff);
     font-family: "Inter", sans-serif;
 
     text-align: center;
@@ -177,7 +177,7 @@ body {
 }
 
 .hero p {
-    color: var(--White, #FFF);
+    color: var(--White, #fff);
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 17px;
@@ -211,7 +211,7 @@ body {
 }
 
 .feautresstyle h4 {
-    color: var(--Heading-Color, #2D2D2D);
+    color: var(--Heading-Color, #2d2d2d);
     font-family: "Inter", sans-serif;
     font-size: 25px;
     font-style: normal;
@@ -220,14 +220,14 @@ body {
 }
 
 .feautresstyle p {
-    color: var(--Text-Color, #6E6E6E);
+    color: var(--Text-Color, #6e6e6e);
     font-family: "Inter", sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
 }
-.spalce{
+.spalce {
     width: 300px;
     background-color: red;
 }
@@ -243,19 +243,26 @@ body {
     line-height: 30px;
     padding: 27px 95px 20px 20px;
 }
-.media1300{
+.media1300 {
     display: flex;
 }
+.navpop-up {
+    display: none;
+}
+.navicon,
+.navpop-down,
+.continent-down {
+    display: none;
+}
 
-@media screen and (max-width: 1300px){
-
-    .feautres{
+@media screen and (max-width: 1300px) {
+    .feautres {
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .formposition{
+    .formposition {
         /* align-items: center; */
         /* width: 718px; */
         /* gap: 50px; */
@@ -264,65 +271,395 @@ body {
         left: 10%;
         right: 10%;
     }
-    .inpflex{
+    .inpflex {
         display: flex;
         justify-content: space-evenly;
         /* gap:30px; */
     }
-    .inputstyle input{
+    .inputstyle input {
         padding: 20px 60px;
     }
-    .selectstyle{
+    .selectstyle {
         padding: 27px 135px 20px 60px;
     }
-    .media1300{
+    .media1300 {
         margin-top: 139px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    /* .formposition button{
+        margin-left: 60px;
+    } */
+}
+
+@media screen and (max-width: 1040px) {
+    .navmenu {
+        display: none;
+    }
+    .btnprimary {
+        display: none;
+    }
+    .header-bar {
+        padding: 38px 41px 37px 25px;
+    }
+    .navicon {
+        display: unset;
+        padding: 13px 15px;
+        background-color: #3db2ff;
+        border: solid 1px #3db2ff;
+    }
+    .navclick {
+        color: white;
+        font-size: 30px;
+    }
+    .navpop-down {
+        display: none;
+    }
+    .navpop-up {
+        transition: 5s;
+        border-radius: 0px 0px 20px 20px;
+        right: 146px;
+        top: 178px;
+        position: absolute;
+        display: unset;
+        padding: 20px;
+        background-color: #3db2ff;
+    }
+    .listonlick {
+        padding: 20px;
+    }
+    .clicklist {
+        color: white;
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+    }
+    .clicklist:hover {
+        border-radius: 15px;
+        transition: 0.5s;
+        background-color: white;
+        color: var(--Text-Color, #6e6e6e);
+        font-family: "Inter", sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    .inputstyle input {
+        padding: 20px 20px;
+    }
+    .selectstyle {
+        padding: 27px 95px 20px 20px;
+    }
 }
 
 
-@media screen and (max-width: 1040){
-
+@media screen and (max-width: 800px){
+    .topar{
+        display: none;
+    }
+    .inpflex{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .formposition{
+        align-items: center;
+    }
+    .media1300{
+        margin-top: 441px;
+        flex-direction: column;
+    }
+    .fetbox{
+        margin-top: 20px;
+    }
 }
-
 
 /* ---------------header done ----------- */
 
-
-
-
-
 /* <!------------- sandros nawili ------------------------->
-<!--------------------sandos nawili morcha aq  -------------------->
+<!--------------------sandos nawili morcha aq  --------------------> */
 
+/* <!----------- map -------------------------> */
 
+.mapsec {
+    width: 100%;
+    padding: 50px 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-<!----------- map ------------------------->
-<!----------- map is done ------------------------->
+.imgback {
+    position: relative;
+}
 
+.NorthAmerica {
+    top: 14%;
+    left: 12%;
+    position: absolute;
+}
+.SouthAmerica {
+    position: absolute;
+    bottom: 24%;
+    left: 22%;
+}
+.Africa {
+    position: absolute;
+    top: 38%;
+    right: 46%;
+}
+.Astralia {
+    position: absolute;
+    right: 10%;
+    bottom: 13%;
+}
+.Asia {
+    top: 15%;
+    right: 25%;
+    position: absolute;
+}
+.continent-popup {
+    display: unset;
+    top: 35%;
+    left: 4%;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #3db2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.continent-popupSouthAmerica {
+    display: unset;
+    top: 0%;
+    left: 30%;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #3db2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.continent-popupAfrica {
+    display: unset;
+    bottom: 0%;
+    left: 55%;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #3db2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.continent-popupAstralia {
+    display: unset;
+    bottom: 34%;
+    left: 76%;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #3db2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.continent-popupAsia {
+    display: unset;
+    bottom: -4%;
+    left: 59%;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #3db2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cardstyle {
+    width: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cardstyle h1 {
+    color: var(--Heading-Color, #2d2d2d);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+}
 
+.discription p {
+    color: var(--Text-Color, #2d2d2d);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+.discription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
 
-<!---------gugas nawili -------------------->
-<!---------gugas nawili morcha -------------------->
+@media screen and (max-width: 1300px) {
+    .mapimg {
+        width: 800px;
+    }
+    .mapsvg {
+        width: 70px;
+        height: 70px;
+    }
+    .continent-popupAstralia {
+        bottom: 34%;
+        left: 56%;
+    }
+}
+@media screen and (max-width: 800px){
+    .mapimg{
+        width: 500px;
+    }
+    .mapsvg{
+        width: 40px;
+        height: 40px;
+    }
+}
 
+/* <!----------- map is done -------------------------> */
 
+/* <!---------gugas nawili --------------------> */
+/* <!---------gugas nawili morcha --------------------> */
 
-<!-- video da fetchis nawili swiperi -->
-<!-- video da fetchis nawili swiperi is done -->
+/* <!-- video da fetchis nawili swiperi --> */
 
+.fetchpart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 100px 105px 50px 105px;
+}
+.title-of-feedbacks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+}
+.title-of-feedbacks span {
+    color: var(--Primary, #3db2ff);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+}
+.title-of-feedbacks h1 {
+    color: var(--Heading-Color, #2d2d2d);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+}
+.title-of-feedbacks p {
+    color: var(--Text-Color, #6e6e6e);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.fetchbox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
 
+.rightbox{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 35px;
+}
+.userprofile{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.userpic{
+    width: 85px;
+    height: 85px;
+    background-color: gray;
+}
+.userfeedback p {
+    color: var(--Text-Color, #6e6e6e);
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.userinfo h1 {
+    color: var(--Heading-Color, #2d2d2d);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+}
 
+.userinfo span {
+    color: var(--Primary, #3db2ff);
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 800px){
+    .fetchpart{
+        display: flex;
+        flex-direction: column;
 
-<!-------Keep Connected & Lets Get In Touch With Us -->
-<!-------Keep Connected & Lets Get In Touch With Us  is done-->
+    }
+    .fetchbox{
+        flex-direction: column;
+    }
+    .feautres{
+        padding: 0px;
+    }
+}
+/* <!-- video da fetchis nawili swiperi is done --> */
 
+/* <!-------Keep Connected & Lets Get In Touch With Us --> */
+/* <!-------Keep Connected & Lets Get In Touch With Us  is done--> */
 
-<!---------- foteri  -------------->
-<!---------- foteri is done  --------------> */
-
-
-
+/* <!---------- foteri  --------------> */
+/* <!---------- foteri is done  --------------> */
