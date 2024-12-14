@@ -1,296 +1,442 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 /* -------header--------- */
 .topsec {
-    width: 100%;
-    padding: 30px 105px 246px 105px;
-    background-color: #3a3a3a;
+  width: 100%;
+  padding: 30px 105px 246px 105px;
+  background-color: #3a3a3a;
 }
 
 .topar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .iconlinks {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .phone-clock {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .clock,
 .phone {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .fa-solid,
 .fa-brands {
-    cursor: pointer;
-    font-size: 20px;
-    color: #3db2ff;
+  cursor: pointer;
+  font-size: 20px;
+  color: #3db2ff;
 }
 
 .showtime {
-    cursor: pointer;
-    font-family: "Inter", sans-serif;
-    color: white;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .header-bar {
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
 }
 
 .navmenu {
-    color: var(--Text-Color, #6e6e6e);
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
+  color: var(--Text-Color, #6e6e6e);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 .listbar {
-    display: flex;
+  display: flex;
 }
 
 .list {
-    cursor: pointer;
-    padding: 35px 15px;
+  cursor: pointer;
+  padding: 35px 15px;
 }
 
 .list:hover {
-    background-color: #3db2ff;
-    color: white;
-    transition: 0.5s;
+  background-color: #3db2ff;
+  color: white;
+  transition: 0.5s;
 }
 
 .btnprimary button {
-    padding: 20px 18px;
-    color: var(--White, #fff);
-    text-align: center;
-    background-color: #3db2ff;
-    border: none;
-    cursor: pointer;
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
+  padding: 20px 18px;
+  color: var(--White, #fff);
+  text-align: center;
+  background-color: #3db2ff;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
 }
-.positionsec{
-    position: relative;
+.positionsec {
+  position: relative;
 }
 .formposition {
-    position: absolute;
-    bottom: 100px;
-    right: 105px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #3db2ff;
+  position: absolute;
+  bottom: 100px;
+  right: 105px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #3db2ff;
 }
 
 .inpflex {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .inputstyle input {
-    border: none;
-    border-bottom: solid 3px white;
-    background-color: #81cdff;
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    padding: 20px;
-
+  border: none;
+  border-bottom: solid 3px white;
+  background-color: #81cdff;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 20px;
 }
-::placeholder{
-    color: var(--White, #FFF);
-
+::placeholder {
+  color: var(--White, #fff);
 }
 
 .formposition button {
-    cursor: pointer;
-    width: 180px;
-    padding: 20px 18px;
-    border: none;
-    color: var(--Primary, #3DB2FF);
-    font-family: "Inter", sans-serif;
+  cursor: pointer;
+  width: 180px;
+  padding: 20px 18px;
+  border: none;
+  color: var(--Primary, #3db2ff);
+  font-family: "Inter", sans-serif;
 
-    text-align: center;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 .hero {
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .hero h1 {
-    color: var(--White, #fff);
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 80px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 80px;
 }
 
 .hero p {
-    color: var(--White, #FFF);
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .feautres {
-    width: 50%;
-    gap: 30px;
-    display: flex;
-    padding: 35px 0px 50px 105px;
-    align-items: flex-start;
+  width: 50%;
+  gap: 30px;
+  display: flex;
+  padding: 35px 0px 50px 105px;
+  align-items: flex-start;
 }
 
 .fetbox {
-    /* width: 285px; */
-    flex-direction: column;
-    gap: 30px;
-    display: flex;
-    margin: 35px;
-    /* padding: 35px; */
-    /* padding-left: 84px; */
+  /* width: 285px; */
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+  margin: 35px;
+  /* padding: 35px; */
+  /* padding-left: 84px; */
 }
 
 .feautresstyle {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .feautresstyle h4 {
-    color: var(--Heading-Color, #2D2D2D);
-    font-family: "Inter", sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 35px;
+  color: var(--Heading-Color, #2d2d2d);
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 35px;
 }
 
 .feautresstyle p {
-    color: var(--Text-Color, #6E6E6E);
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+  color: var(--Text-Color, #6e6e6e);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
-.spalce{
-    width: 300px;
-    background-color: red;
+.spalce {
+  width: 300px;
+  background-color: red;
 }
 .selectstyle {
-    border: none;
-    border-bottom: solid 3px white;
-    background-color: #81cdff;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    padding: 27px 95px 20px 20px;
+  border: none;
+  border-bottom: solid 3px white;
+  background-color: #81cdff;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 27px 95px 20px 20px;
 }
-.media1300{
+.media1300 {
+  display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+  .feautres {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .formposition {
+    /* align-items: center; */
+    /* width: 718px; */
+    /* gap: 50px; */
+    /* justify-content: center; */
+    bottom: 25%;
+    left: 10%;
+    right: 10%;
+  }
+  .inpflex {
     display: flex;
+    justify-content: space-evenly;
+    /* gap:30px; */
+  }
+  .inputstyle input {
+    padding: 20px 60px;
+  }
+  .selectstyle {
+    padding: 27px 135px 20px 60px;
+  }
+  .media1300 {
+    margin-top: 139px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 1300px){
-
-    .feautres{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .formposition{
-        /* align-items: center; */
-        /* width: 718px; */
-        /* gap: 50px; */
-        /* justify-content: center; */
-        bottom: 25%;
-        left: 10%;
-        right: 10%;
-    }
-    .inpflex{
-        display: flex;
-        justify-content: space-evenly;
-        /* gap:30px; */
-    }
-    .inputstyle input{
-        padding: 20px 60px;
-    }
-    .selectstyle{
-        padding: 27px 135px 20px 60px;
-    }
-    .media1300{
-        margin-top: 139px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+@media screen and (max-width: 1040) {
 }
-
-
-@media screen and (max-width: 1040){
-
-}
-
 
 /* ---------------header done ----------- */
 
+/* <!---------gugas nawili --------------------> */
+.gugsec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 30px;
+}
+.leftg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* width: 50%; */
+}
 
+#firstg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+#pp {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(61, 178, 255, 1);
+}
+
+#firstg h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+#pp1 {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(110, 110, 110, 1);
+}
+
+#secondg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#best {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#best p {
+  color: var(--Text-Color, #6e6e6e);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#thirdg {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+#buttong {
+  border: none;
+}
+
+#buttong1 {
+  border: none;
+  background-color: white;
+}
+
+#thirdg p {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(110, 110, 110, 1);
+}
+
+.rightg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#threeg {
+  background: var(--Primary, #3db2ff);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 35px;
+}
+
+#twins h4 {
+  color: var(--White, #fff);
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 35px;
+}
+
+#twins p {
+  color: var(--White, #fff);
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1040px) {
+  .gugsec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #threeg {
+    background: var(--Primary, #3db2ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 35px;
+  }
+}
+
+/* <!---------gugas nawili morcha --------------------> */
