@@ -82,17 +82,51 @@ let section = document.getElementById("section")
 myform.addEventListener("submit" , (e) =>{
     console.log("rati");
     e.preventDefault()
-    getData()
     console.log(section.value);
     console.log(address.value);
     console.log(Phone.value);
     console.log(Nameinputer.value);
 })
 
+let limit = 6
+
+let showusers = 2
+
+let showanotheruser = 3
 async function getData() {
-    
-    const res = await fetch(`https://dummyjson.com/users`)
-    const data = await res.json()
-    console.log(data);
+    try {
+        const res = await fetch(`https://dummyjson.com/users/${showusers}?limit=${limit}`)
+        const data = await res.json()
+        const usersinfo = data.users
+        console.log(data);
+        // InnerToHTML(data)
+
+    } catch (error) {
+        console.log(error);
+    }
 }
+
+getData()
+
+let showmorebtn = document.getElementById("showmorebtn")
+
+showmorebtn.addEventListener("click" , () =>{
+    if (showusers <= 5) {
+       
+            showusers++
+            console.log(showusers);
+             getData()
+             InnerToHTML()
+
+    }
+})
+
+let username = document.getElementById("username")
+
+function InnerToHTML() {
+    username.innerText = `${showusers}`
+}
+
+InnerToHTML()
+
 

@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: "Inter", sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
@@ -318,7 +319,6 @@ body {
         display: none;
     }
     .navpop-up {
-        transition: 5s;
         border-radius: 0px 0px 20px 20px;
         right: 146px;
         top: 178px;
@@ -354,24 +354,26 @@ body {
     }
 }
 
-
-@media screen and (max-width: 800px){
-    .topar{
+@media screen and (max-width: 800px) {
+    .topar {
         display: none;
     }
-    .inpflex{
+    .navpop-up {
+        top: 157px;
+    }
+    .inpflex {
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .formposition{
+    .formposition {
         align-items: center;
     }
-    .media1300{
+    .media1300 {
         margin-top: 441px;
         flex-direction: column;
     }
-    .fetbox{
+    .fetbox {
         margin-top: 20px;
     }
 }
@@ -531,11 +533,11 @@ body {
         left: 56%;
     }
 }
-@media screen and (max-width: 800px){
-    .mapimg{
+@media screen and (max-width: 800px) {
+    .mapimg {
         width: 500px;
     }
-    .mapsvg{
+    .mapsvg {
         width: 40px;
         height: 40px;
     }
@@ -599,19 +601,19 @@ body {
     justify-content: center;
 }
 
-.rightbox{
+.rightbox {
     background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 35px;
 }
-.userprofile{
+.userprofile {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.userpic{
+.userpic {
     width: 85px;
     height: 85px;
     background-color: gray;
@@ -643,17 +645,129 @@ body {
     letter-spacing: 1.95px;
     text-transform: uppercase;
 }
-@media screen and (max-width: 800px){
-    .fetchpart{
+.showmore {
+    padding: 20px 18px;
+    color: var(--White, #fff);
+    text-align: center;
+    background-color: #3db2ff;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.teamskill {
+    background-color: #3a3a3a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.videodiv{
+    padding: 200px 150px;
+    background-color: #6e6e6e;
+    border: solid 5px white;
+}
+.skill {
+    padding: 100px 105px 100px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    width: 50%;
+}
+.skillpercent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.handcl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.handcl span{
+    color: var(--Primary, #3DB2FF);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 1.95px;
+text-transform: uppercase;
+}
+.wbox{
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+.bbox{
+    height: 30px;
+    width: 92%;
+    background-color: #3DB2FF;
+}
+.bbox2{
+    height: 30px;
+    width: 98%;
+    background-color: #3DB2FF;
+}
+.skill-text {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.skill-text span {
+    color: var(--Primary, #3db2ff);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+}
+
+.skill-text h1 {
+    color: var(--White, #fff);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+}
+.skill-text p {
+    color: var(--White, #fff);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .fetchpart {
         display: flex;
         flex-direction: column;
-
     }
-    .fetchbox{
+    .fetchbox {
         flex-direction: column;
     }
-    .feautres{
+    .feautres {
         padding: 0px;
+    }
+    .teamskill{
+        flex-direction: column;
+    }
+    .skill{
+        width: 100%;
+        padding: 50px 25px;
     }
 }
 /* <!-- video da fetchis nawili swiperi is done --> */
