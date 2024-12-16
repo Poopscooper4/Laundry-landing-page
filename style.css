@@ -666,14 +666,14 @@ body {
     align-items: center;
     justify-content: center;
 }
-.videoside{
+.videoside {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.videodiv{
+.videodiv {
     padding: 200px 150px;
     background-color: #6e6e6e;
     border: solid 5px white;
@@ -685,40 +685,39 @@ body {
     gap: 43px;
     width: 50%;
 }
-.skillpercent{
+.skillpercent {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
-.handcl{
+.handcl {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.handcl span{
-    color: var(--Primary, #3DB2FF);
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 1.95px;
-text-transform: uppercase;
+.handcl span {
+    color: var(--Primary, #3db2ff);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
 }
-.wbox{
+.wbox {
     background-color: white;
     padding: 15px;
     width: 100%;
 }
-.bbox{
+.bbox {
     height: 30px;
     width: 92%;
-    background-color: #3DB2FF;
+    background-color: #3db2ff;
 }
-.bbox2{
+.bbox2 {
     height: 30px;
     width: 98%;
-    background-color: #3DB2FF;
+    background-color: #3db2ff;
 }
 .skill-text {
     text-align: start;
@@ -762,10 +761,10 @@ text-transform: uppercase;
     .feautres {
         padding: 0px;
     }
-    .teamskill{
+    .teamskill {
         flex-direction: column;
     }
-    .skill{
+    .skill {
         width: 100%;
         padding: 50px 25px;
     }
@@ -773,6 +772,93 @@ text-transform: uppercase;
 /* <!-- video da fetchis nawili swiperi is done --> */
 
 /* <!-------Keep Connected & Lets Get In Touch With Us --> */
+
+.leavemessage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondside {
+    width: 50%;
+}
+.sideone {
+    gap: 30px;
+    padding: 50px 10px 100px 105px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.leavetxt {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    text-align: start;
+}
+.leavetxt span {
+    color: var(--Primary, #3db2ff);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+}
+
+.leavetxt h1 {
+    color: var(--Heading-Color, #2d2d2d);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+}
+.leavetxt p {
+    color: var(--Text-Color, #6e6e6e);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.cont-addres {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.infobox {
+    display: flex;
+    gap: 10px;
+}
+
+.graybox {
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+}
+.infoboxtext h1 {
+    color: var(--Heading-Color, #2d2d2d);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 35px;
+}
+
+.infoboxtext p {
+    color: var(--Text-Color, #6e6e6e);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+@media screen and (max-width: 800px) {
+    .sideone {
+        flex-direction: column;
+    }
+}
 /* <!-------Keep Connected & Lets Get In Touch With Us  is done--> */
 
 /* <!---------- foteri  --------------> */
