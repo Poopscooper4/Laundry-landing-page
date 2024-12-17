@@ -522,7 +522,7 @@ body {
 
 @media screen and (max-width: 1300px) {
     .mapimg {
-        width: 800px;
+        width: 100%;
     }
     .mapsvg {
         width: 70px;
@@ -535,7 +535,7 @@ body {
 }
 @media screen and (max-width: 800px) {
     .mapimg {
-        width: 500px;
+        width: 100%;
     }
     .mapsvg {
         width: 40px;
