@@ -99,6 +99,7 @@ async function getData() {
     console.log(users);
     users.forEach((element) => {
       console.log(element);
+      console.log(element.gender);
     });
 
     // console.log(users.);
