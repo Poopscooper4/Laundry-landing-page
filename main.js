@@ -29,47 +29,6 @@ NorthAmerica.addEventListener("mouseleave", () => {
   cardstyle.className = "continent-down";
 });
 
-SouthAmerica.addEventListener("mouseover", () => {
-  cardstyle.className = "continent-popupSouthAmerica";
-  whychoose.textContent = "Why Choose South America Laundry Service?";
-  discription.textContent =
-    "South America Laundry Service is known for its reliable and on-time services, ensuring customer satisfaction every step of the way. With a focus on eco-friendly practices, the service uses sustainable methods and detergents to minimize environmental impact. Their experienced team handles every garment with care, delivering exceptional results. Plus, with easy scheduling and convenient doorstep delivery, laundry has never been more hassle-free.";
-});
-
-SouthAmerica.addEventListener("mouseleave", () => {
-  cardstyle.className = "continent-down";
-});
-
-Africa.addEventListener("mouseover", () => {
-  cardstyle.className = "continent-popupAfrica";
-  whychoose.textContent = "Why Choose Africa Laundry Service?";
-  discription.textContent =
-    "Africa Laundry Service is known for its reliable and on-time services, ensuring customer satisfaction every step of the way. With a focus on eco-friendly practices, the service uses sustainable methods and detergents to minimize environmental impact. Their experienced team handles every garment with care, delivering exceptional results. Plus, with easy scheduling and convenient doorstep delivery, laundry has never been more hassle-free.";
-});
-
-Africa.addEventListener("mouseleave", () => {
-  cardstyle.className = "continent-down";
-});
-Astralia.addEventListener("mouseover", () => {
-  cardstyle.className = "continent-popupAstralia";
-  whychoose.textContent = "Why Choose Astralia Laundry Service?";
-  discription.textContent =
-    "Astralia Laundry Service is known for its reliable and on-time services, ensuring customer satisfaction every step of the way. With a focus on eco-friendly practices, the service uses sustainable methods and detergents to minimize environmental impact. Their experienced team handles every garment with care, delivering exceptional results. Plus, with easy scheduling and convenient doorstep delivery, laundry has never been more hassle-free.";
-});
-
-Astralia.addEventListener("mouseleave", () => {
-  cardstyle.className = "continent-down";
-});
-Asia.addEventListener("mouseover", () => {
-  cardstyle.className = "continent-popupAsia";
-  whychoose.textContent = "Why Choose Asia Laundry Service?";
-  discription.textContent =
-    "Asia Laundry Service is known for its reliable and on-time services, ensuring customer satisfaction every step of the way. With a focus on eco-friendly practices, the service uses sustainable methods and detergents to minimize environmental impact. Their experienced team handles every garment with care, delivering exceptional results. Plus, with easy scheduling and convenient doorstep delivery, laundry has never been more hassle-free.";
-});
-
-Asia.addEventListener("mouseleave", () => {
-  cardstyle.className = "continent-down";
-});
 
 let myform = document.getElementById("myform");
 let Nameinputer = document.getElementById("Nameinputer");
@@ -86,46 +45,97 @@ myform.addEventListener("submit", (e) => {
   console.log(Nameinputer.value);
 });
 
-let limit = 6;
-
-let showusers = 2;
+let  userinfo = document.getElementById("userinfo")
+let  appenhere = document.getElementById("appenhere")
 
 let showanotheruser = 3;
+
 async function getData() {
   try {
+    const limit = 2; // Ensure you define the limit for the number of users
     const res = await fetch(`https://dummyjson.com/users?limit=${limit}`);
     const data = await res.json();
     const users = data.users;
-    console.log(users);
+    
+    appenhere.innerHTML = ""; 
+    
     users.forEach((element) => {
       console.log(element);
-      console.log(element.gender);
+      const userDiv = document.createElement("div");
+      userDiv.className = "fetchbox";
+      
+      userDiv.innerHTML = `
+      <div class="rating">
+      <svg width="175" height="23" viewBox="0 0 175 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- SVG content -->
+      </svg>
+      </div>
+      <div class="recdisc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="userprofile">
+      <img src="${element.image}" alt="">
+      <div id="userinfo" class="userinfo">
+      <h1>${element.firstName} ${element.lastName}</h1>
+      <span>Reviews On Google</span>
+      </div>
+      </div>
+      `;
+      
+      appenhere.appendChild(userDiv);
     });
+  } catch (error) {
+    console.log(error);
+  }
+}
+getData();
 
-    // console.log(users.);
-    // InnerToHTML(data)
+let  appenhere2 = document.getElementById("appenhere2")
+
+async function getData2() {
+  try {
+    const limit2 = 4; // Ensure you define the limit for the number of users
+    const res = await fetch(`https://dummyjson.com/users/?limit=${limit2}`);
+    const data = await res.json();
+    const users = data.users;
+
+    appenhere2.innerHTML = ""; 
+
+    users.forEach((element) => {
+      console.log(element);
+      const userDiv = document.createElement("div");
+      userDiv.className = "fetchbox";
+
+      userDiv.innerHTML = `
+        <div class="rating">
+          <svg width="175" height="23" viewBox="0 0 175 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- SVG content -->
+          </svg>
+        </div>
+        <div class="recdisc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="userprofile">
+          <img src="${element.image}" alt="">
+          <div id="userinfo" class="userinfo">
+            <h1>${element.firstName} ${element.lastName}</h1>
+            <span>Reviews On Google</span>
+          </div>
+        </div>
+      `;
+
+      appenhere2.appendChild(userDiv);
+    });
   } catch (error) {
     console.log(error);
   }
 }
 
-getData();
+getData2();
 
-let showmorebtn = document.getElementById("showmorebtn");
 
-showmorebtn.addEventListener("click", () => {
-  if (showusers <= 5) {
-    showusers++;
-    console.log(showusers);
-    getData();
-    InnerToHTML();
-  }
-});
 
-let username = document.getElementById("username");
-
-function InnerToHTML() {
-  username.innerText = `${showusers}`;
-}
-
-InnerToHTML();

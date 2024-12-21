@@ -523,38 +523,16 @@ body {
   justify-content: center;
   gap: 20px;
 }
-.cardstyle {
-  width: 300px;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.cardstyle h1 {
-  color: var(--Heading-Color, #2d2d2d);
+.mapsvg:hover{
   text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 900;
+  transition: 0.5s;
+  width: 300%;
+  height: 40%;
+}
+.gaqri{
+  display: none;
 }
 
-.discription p {
-  color: var(--Text-Color, #2d2d2d);
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15px;
-}
-.discription {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 15px;
-}
 
 @media screen and (max-width: 1300px) {
   .mapimg {
@@ -750,124 +728,7 @@ body {
 }
 /* <!---------gugas nawili morcha --------------------> */
 
-/* <!-- video da fetchis nawili swiperi --> */
-
-body {
-  position: relative;
-  height: 100%;
-}
-
-
-.fetchpart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
-  padding: 100px 105px 50px 105px;
-}
-.title-of-feedbacks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  flex-direction: column;
-}
-.title-of-feedbacks span {
-  color: var(--Primary, #3db2ff);
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1.95px;
-  text-transform: uppercase;
-}
-.title-of-feedbacks h1 {
-  color: var(--Heading-Color, #2d2d2d);
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 60px;
-}
-.title-of-feedbacks p {
-  color: var(--Text-Color, #6e6e6e);
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-.fetchbox {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  justify-content: center;
-}
-
-.rightbox {
-  text-align: start;
-  align-items: start;
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 35px;
-}
-.userprofile {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-.userpic {
-  width: 85px;
-  height: 85px;
-  background-color: gray;
-}
-.userfeedback p {
-  color: var(--Text-Color, #6e6e6e);
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-.userinfo h1 {
-  color: var(--Heading-Color, #2d2d2d);
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 28px;
-}
-
-.userinfo span {
-  color: var(--Primary, #3db2ff);
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1.95px;
-  text-transform: uppercase;
-}
-.showmore {
-  padding: 20px 18px;
-  color: var(--White, #fff);
-  text-align: center;
-  background-color: #3db2ff;
-  border: none;
-  cursor: pointer;
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 25px;
-}
+/* <!-- videos nawili is done --> */
 
 .teamskill {
   background-color: #3a3a3a;
@@ -989,8 +850,124 @@ body {
     width: 100%;
   }
 }
-/* <!-- video da fetchis nawili swiperi is done --> */
+/* <!-- videos nawili is done --> */
 
+/* -----------fetchi ---------------------------- */
+
+.body {
+  position: relative;
+  height: 100%;
+}
+
+.body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+  height: 600px;
+}
+
+swiper-slide {
+  padding: 35px;
+  gap: 30px;
+  height: 500px;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fetchbox{
+
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  background-color: #f3f3f3;
+}
+.recdisc p{
+  text-align: start;
+  color: var(--Text-Color, #6E6E6E);
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+.userprofile{
+  gap: 30px;
+  align-items: center;
+  display: flex;
+}
+.userprofile img{
+  width: 85px;
+  height: 85px;
+}
+
+.fetchpart {
+  padding: 100px 105px 35px 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.fetchheader {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.fetchheader span {
+  color: var(--Primary, #3db2ff);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.95px;
+  text-transform: uppercase;
+}
+
+.fetchheader h1 {
+  color: var(--Heading-Color, #2d2d2d);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+}
+
+.fetchheader p {
+  color: var(--Text-Color, #6e6e6e);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.userinfo h1{
+  color: var(--Heading-Color, #2D2D2D);
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 28px;
+}
+.userinfo span{
+  color: var(--Primary, #3DB2FF);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 1.95px;
+text-transform: uppercase;
+}
+
+/* -----------fetchi is done ---------------------------- */
 /* <!-------Keep Connected & Lets Get In Touch With Us --> */
 
 .leavemessage {
