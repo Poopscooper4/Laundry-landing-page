@@ -18,16 +18,7 @@ navigation.addEventListener("mouseleave", () => {
   navigation.className = "navpop-down";
 });
 
-NorthAmerica.addEventListener("mouseover", () => {
-  cardstyle.className = "continent-popup";
-  whychoose.textContent = "Why Choose North America Laundry Service?";
-  discription.textContent =
-    "North America Laundry Service is known for its reliable and on-time services, ensuring customer satisfaction every step of the way. With a focus on eco-friendly practices, the service uses sustainable methods and detergents to minimize environmental impact. Their experienced team handles every garment with care, delivering exceptional results. Plus, with easy scheduling and convenient doorstep delivery, laundry has never been more hassle-free.";
-});
 
-NorthAmerica.addEventListener("mouseleave", () => {
-  cardstyle.className = "continent-down";
-});
 
 
 let myform = document.getElementById("myform");
@@ -226,6 +217,46 @@ async function getData3() {
 getData3()
 
 
+let clgname = document.getElementById("clgname")
+
+let clglastname = document.getElementById("clglastname")
+
+let clgemail = document.getElementById("clgemail")
+
+let clgsubj = document.getElementById("clgsubj")
+
+let clgmesage = document.getElementById("clgmesage")
+
+let messageform = document.getElementById("messageform")
+
+
+messageform.addEventListener("submit" , (e) =>{
+    e.preventDefault()
+    console.log(clgname.value);
+    console.log(clglastname.value);
+    console.log(clgemail.value);
+    console.log(clgsubj.value);
+    console.log(sendmessage.value);
+
+    clgname.value = ""
+    clglastname.value = ""
+    clgemail.value = ""
+    clgsubj.value = ""
+    clgmesage.value = ""
+
+
+
+})
+
+
+let container = document.getElementsByClassName("container")
+let subname = document.getElementsByClassName("subname")
+
+container.addEventListener("mouseover", () => {
+});
+container.addEventListener("mouseleave", () => {
+  navigation.className = "navpop-down";
+});
 
 
 

@@ -707,6 +707,155 @@ body {
   line-height: 30px;
 }
 
+.hoverissec{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  padding: 50px 105px 100px 105px;
+}
+.Pricingtittle span{
+  color: var(--Primary, #3DB2FF);
+text-align: center;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 1.95px;
+text-transform: uppercase;
+}
+.Pricingtittle h1{
+  color: var(--Heading-Color, #2D2D2D);
+text-align: center;
+font-size: 45px;
+font-style: normal;
+font-weight: 900;
+line-height: 60px; 
+}
+.Pricingtittle p{
+  color: var(--Text-Color, #6E6E6E);
+text-align: center;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+
+.hoverpriceing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container{
+  gap: 30px;
+  padding: 35px;
+  border: 2px solid #3DB2FF;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.subpricetext{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 30px;
+
+}
+.subname h2{
+  color: var(--Heading-Color, #2D2D2D);
+font-size: 25px;
+font-style: normal;
+font-weight: 900;
+line-height: 35px;
+}
+.subname p{
+  color: var(--Text-Color, #6E6E6E);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.subprice span{
+  color: var(--Primary, #3DB2FF);
+font-size: 60px;
+font-style: normal;
+font-weight: 900;
+line-height: 80px;
+}
+.includes  {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.notincludes{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.notincludes p {
+  color: var(--Grey, #DADADA);
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+.cheackis{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.cheackis p {
+  color: var(--Text-Color, #6E6E6E);
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 176.471% */
+}
+
+.btnLetsTalkUs{
+  display: flex;
+  align-items: start;
+}
+.btnLetsTalkUs button{
+    padding: 20px;
+    background-color: #3db2ff;
+    border: none;
+    color: var(--White, #FFF);
+text-align: center;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 147.059% */
+}
+.idk123{
+  border-bottom: solid 1px #DADADA;
+  border-top: solid 1px #DADADA;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.container:hover{
+  transition: 0.5s;
+  color: white;
+  background-color: #3DB2FF;
+}
+
+
+.container:hover svg path {
+  fill: white; 
+}
+
 @media screen and (max-width: 1040px) {
   .gugsec {
     padding: 50px 20px;
