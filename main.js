@@ -249,13 +249,30 @@ messageform.addEventListener("submit" , (e) =>{
 })
 
 
-let container = document.getElementsByClassName("container")
-let subname = document.getElementsByClassName("subname")
+let container = document.querySelector(".container");
+let whiteElements = document.getElementsByClassName("white");
+let talkbtn = document.getElementsByClassName("talkbtn");
 
 container.addEventListener("mouseover", () => {
+  for (let element of whiteElements) {
+    element.style.color = "white";
+  }
+
+  for (let button of talkbtn) {
+    button.style.backgroundColor = "white";
+    button.style.color = "#3DB2FF";
+  }
 });
-container.addEventListener("mouseleave", () => {
-  navigation.className = "navpop-down";
+
+container.addEventListener("mouseout", () => {
+  for (let element of whiteElements) {
+    element.style.color = "";
+  }
+
+  for (let button of talkbtn) {
+    button.style.backgroundColor = "";
+    button.style.color = "";
+  }
 });
 
 
