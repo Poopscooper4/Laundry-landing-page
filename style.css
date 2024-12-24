@@ -550,13 +550,14 @@ flex-shrink: 0;
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 50%;
+  height: 600px;
 }
 
 #videovideo{
   position: absolute;
   width: 538px;
-  bottom: 0;
+  bottom: 10%;
+  right: 4%;
  
 }
 
@@ -809,10 +810,19 @@ line-height: 35px;
   color: white;
   transition: 0.5s;
 }
+.toptop:hover svg path {
+  fill: #f9b830; 
+}
 
 @media screen and (max-width: 1040px) {
   .sandrostep{
     flex-direction: column;
+  }
+  .right ,.left{
+    width: 100%;
+  }
+  .left{
+    height: 700px;
   }
 
 
@@ -824,7 +834,7 @@ line-height: 35px;
   }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:770px){
   .KING{
     flex-direction: column;
   }
@@ -832,6 +842,25 @@ line-height: 35px;
 
   .pirvelibox{
     flex-direction: column;
+  }
+  .sandrostep{
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+  #laundry{
+    width: 450px;
+    height: 250px;
+  }
+  #videovideo{
+    width: 450px;
+    height: 250px;
+  }
+  .right ,.left{
+    padding: 0;
+    width: 100%;
+  }
+  .left{
+    height: 400px;
   }
 }
 
@@ -1913,7 +1942,7 @@ swiper-slide {
 
   .secondside {
     width: 100%;
-    height: 500px;
+    height: 200px;
   }
 
   #messageform {
@@ -1942,11 +1971,15 @@ swiper-slide {
 
   .secondside {
     width: 100%;
-    height: 750px;
+    height: 250px;
   }
 
   #messageform {
     top: 40%;
+  }
+  .blackblack{
+    align-items: start;
+    padding: 100px 20px;
   }
 }
 
@@ -1966,7 +1999,7 @@ swiper-slide {
   }
 
   .secondside {
-    height: 1000px;
+    height: 400px;
   }
 
   .fetchpart {
@@ -1974,6 +2007,10 @@ swiper-slide {
   }
   .graybox{
     height: 300px;
+  }
+  .blackblack{
+    align-items: start;
+    padding: 100px 20px;
   }
 }
 
