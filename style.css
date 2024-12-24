@@ -560,6 +560,7 @@ body {
 /* <!---------gugas nawili  --------------------> */
 
 .gugsec {
+  position: relative;
   width: 100%;
   padding: 50px 105px;
   display: flex;
@@ -567,11 +568,48 @@ body {
   /* align-items: center; */
   gap: 30px;
 }
+.videonone{
+  display: none;
+}
+#playvideo{
+  cursor: pointer;
+}
+.videobox{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  top: 8%;
+  padding: 100px;
+  right: 25%;
+  background-color: #3db2ff;
+  border-radius: 20%;
+  border: solid 5px #81cdff;
+  position: absolute;
+}
+.youtubevideo{
+  top: 30%;
+  right: 30%;
+  border: solid 5px #3DB2FF;
+}
 .leftg {
   display: flex;
   flex-direction: column;
   gap: 15px;
   /* width: 50%; */
+}
+
+#videodown{
+  cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    border: none;
+    padding: 20px 45px;
+    color: #3db2ff;
+    background-color: white;
 }
 
 #firstg {
@@ -641,6 +679,7 @@ body {
 }
 
 #buttong {
+  cursor: pointer;;
   font-size: 17px;
   font-weight: 600;
   line-height: 25px;
@@ -910,6 +949,10 @@ line-height: 25px;
   .morepadd{
     padding-right: 300px;
   }
+  .videobox{
+    padding: 10%;
+    right: 14%;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -933,6 +976,15 @@ line-height: 25px;
   .container{
     padding: 90px 55px 60px 55px;
     padding-right: 100px;
+  }
+  .videobox{
+    padding: 5%;
+    top: 10%;
+    right: 14%;
+  }
+  .youtubevideo{
+    width: 350px;
+    height: 200px;
   }
 }
 
@@ -1433,4 +1485,125 @@ text-transform: uppercase;
 /* <!-------Keep Connected & Lets Get In Touch With Us  is done--> */
 
 /* <!---------- foteri  --------------> */
+
+
+.botfooter{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 105px;
+  background-color: #3DB2FF;
+  gap: 35px;
+}
+.footertop{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footerside2{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.footersvgdiv{
+  display: flex;
+  gap: 15px;
+}
+.footertop p{
+  color: var(--White, #FFF);
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+.footericons{
+  font-size: 24px;
+ color: white;
+}
+.footermid{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+.footermid h1{
+  color: var(--White, #FFF);
+font-size: 25px;
+font-style: normal;
+font-weight: 900;
+line-height: 35px;
+}
+.footerul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--White, #FFF);
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+list-style: none;
+line-height: 25px; 
+}
+.footerform{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footerform h1{
+  color: var(--White, #FFF);
+font-size: 25px;
+font-style: normal;
+font-weight: 900;
+line-height: 35px;
+}
+.footerform span{
+  color: var(--White, #FFF);
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+
+.footerul a{
+  text-decoration: none;
+  color: var(--White, #FFF);
+
+}
+.footerform input{
+  padding: 20px;
+  color: var(--White, #FFF);
+  border: none;
+  border-bottom: solid 3px white;
+background-color: #81cdff;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 176.471% */
+}
+.footerform button{
+  padding: 18px 20px;
+  border: none;
+  background-color: white;
+  color: var(--Primary, #3DB2FF);
+text-align: center;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 147.059% */
+}
+
+@media screen and (max-width: 800px){
+  .botfooter{
+    align-items: start;
+  padding: 20px;
+    flex-direction: column;
+  }
+  .footerside2{
+    gap: 50px;
+    align-items: start;
+    flex-direction: column;
+  }
+}
 /* <!---------- foteri is done  --------------> */

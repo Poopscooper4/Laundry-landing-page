@@ -276,5 +276,28 @@ container.addEventListener("mouseout", () => {
 });
 
 
+let footerform = document.getElementById("footerform")
+let footeremail = document.getElementById("footeremail")
+
+footerform.addEventListener("submit" , (e) => {
+    e.preventDefault()
+    console.log(footeremail.value);
+})
+
+
+let playvideo = document.getElementById("playvideo")
+let videosdisplay = document.getElementById("videosdisplay")
+let videodown = document.getElementById("videodown")
+
+
+playvideo.addEventListener("click" , () => {
+  videosdisplay.classList = "videobox"
+})
+
+
+videodown.addEventListener("click" , () => {
+  videosdisplay.className = "videonone"
+})
+
 
 
