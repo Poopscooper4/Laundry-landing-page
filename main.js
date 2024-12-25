@@ -43,7 +43,7 @@ let showanotheruser = 3;
 
 async function getData() {
   try {
-    const limit = 2; // Ensure you define the limit for the number of users
+    const limit = 2;
     const res = await fetch(`https://dummyjson.com/users?limit=${limit}`);
     const data = await res.json();
     const users = data.users;
@@ -102,7 +102,7 @@ let  appenhere2 = document.getElementById("appenhere2")
 
 async function getData2() {
   try {
-    const limit2 = 4; // Ensure you define the limit for the number of users
+    const limit2 = 4; 
     const res = await fetch(`https://dummyjson.com/users/?limit=${limit2}`);
     const data = await res.json();
     const users = data.users.slice(2, 6);
@@ -161,7 +161,7 @@ let  appenhere3 = document.getElementById("appenhere3")
 
 async function getData3() {
   try {
-    const limit3 = 6; // Ensure you define the limit for the number of users
+    const limit3 = 6; 
     const res = await fetch(`https://dummyjson.com/users/?limit=${limit3}`);
     const data = await res.json();
     const users = data.users.slice(4, 6);
